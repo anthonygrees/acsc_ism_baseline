@@ -4,7 +4,7 @@ maintainer: The Authors
 copyright: The Authors
 copyright_email: anthony@chef.io
 license: Apache-2.0
-summary: An InSpec Compliance Profile for the Australian Government Information Security Manual (ISM)
+summary: An InSpec Compliance Profile covering the Australian Government Information Security Manual (ISM) as produced by the The Australian Cyber Security Centre within the Australian Signals Directorate.
 version: 0.1.0
 supports:
   platform: os
