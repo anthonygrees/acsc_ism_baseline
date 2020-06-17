@@ -35,7 +35,7 @@ inspec exec . --json-config inspec.json
 ![ISM Report](/images/ism-report.png)
 
 ### Source
-Australian Government Information Security Manual - https://www.cyber.gov.au/sites/default/files/2020-06/ISM%20-%20List%20of%20Security%20Controls%20%28June%202020%29.xml
+Australian Government Information Security Manual - [PDF](https://www.cyber.gov.au/sites/default/files/2020-06/ISM%20-%20List%20of%20Security%20Controls%20%28June%202020%29.xml)
 
 ### Chef InSpec
 Don't have InSpec installed? 
