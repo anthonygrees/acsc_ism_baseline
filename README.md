@@ -40,7 +40,7 @@ Australian Government Information Security Manual - [PDF](https://www.cyber.gov.
 ### Chef InSpec
 Don't have InSpec installed? 
 
-Here you go - https://downloads.chef.io/inspec
+Here you go - [InSpec Link](https://downloads.chef.io/inspec)
 
 ## License and Author
 
