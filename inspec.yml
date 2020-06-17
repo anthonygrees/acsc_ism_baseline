@@ -1,0 +1,13 @@
+name: acsc_ism_baseline
+title: InSpec Profile
+maintainer: The Authors
+copyright: The Authors
+copyright_email: anthony@chef.io
+license: Apache-2.0
+summary: An InSpec Compliance Profile
+version: 0.1.0
+supports:
+  platform: os
+depends:
+  - name: cis-windows2016rtm
+    compliance: admin/cis-windows2016rtm-release1607-level1-memberserver
