@@ -1,10 +1,10 @@
 name: acsc_ism_baseline
-title: InSpec Profile
+title: Australian Government Information Security Manual
 maintainer: The Authors
 copyright: The Authors
 copyright_email: anthony@chef.io
 license: Apache-2.0
-summary: An InSpec Compliance Profile
+summary: An InSpec Compliance Profile for the Australian Government Information Security Manual (ISM)
 version: 0.1.0
 supports:
   platform: os
