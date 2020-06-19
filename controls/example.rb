@@ -42,7 +42,18 @@ end
 
 
 require_controls 'cis-windows2016rtm' do
-  control 'xccdf_org.cisecurity.benchmarks_rule_1.1.1_L1_Ensure_Enforce_password_history_is_set_to_24_or_more_passwords' do
-    tag acsc: ["ACSC ISM","June 2020", "Top_Secret", "OSH-1408"]
+  control 'xccdf_org.cisecurity.benchmarks_rule_2.3.1.1_L1_Ensure_Accounts_Administrator_account_status_is_set_to_Disabled_MS_only' do
+    tag acsc: ["ACSC ISM","June 2020", "Official", "OSH-1409"]
+    tag acsc: ["ACSC ISM","June 2020", "Protected", "OSH-1409"]
+    tag acsc: ["ACSC ISM","June 2020", "Secret", "OSH-1409"]
+    tag acsc: ["ACSC ISM","June 2020", "Top_Secret", "OSH-1409"]
   end
+
+  control 'xccdf_org.cisecurity.benchmarks_rule_2.3.1.3_L1_Ensure_Accounts_Guest_account_status_is_set_to_Disabled_MS_only' do
+    tag acsc: ["ACSC ISM","June 2020", "Official", "OSH-0383"]
+    tag acsc: ["ACSC ISM","June 2020", "Protected", "OSH-0383"]
+    tag acsc: ["ACSC ISM","June 2020", "Secret", "OSH-0383"]
+    tag acsc: ["ACSC ISM","June 2020", "Top_Secret", "OSH-0383"]
+  end
+
 end
