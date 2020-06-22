@@ -16,7 +16,7 @@ cd acsc_ism_baseline
 
 First authenticate to your Chef Automate complaince server
 ```bash
- inspec compliance login https://your-chef-automate.chef-demo.com --user admin --insecure --token
+ inspec compliance login https://your-chef-automate.chef-demo.com --user workstation-1 --insecure --token
 '<token>'
 ```
 
