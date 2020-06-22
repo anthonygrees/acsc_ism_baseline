@@ -121,11 +121,6 @@ require_controls 'windows-patch-baseline' do
    title 'ACSC ISM 0300, 0298, 0303, 1497, 1498, 1499, 1500 - System patching'
   end
 
-  control 'optional-patches' do
-   tag acsc: ["ACSC ISM","June 2020", "Official", "Protected", "Top_Secret", "Secret", "PM0304", "PM-1501", "PM-1211"]
-   title 'ACSC ISM 0304, 1501, 1211 - System patching'
-  end
-
   control 'verify-kb' do
    tag acsc: ["ACSC ISM","June 2020", "Official", "Protected", "Top_Secret", "Secret", "PM-1143", "PM-1493", "PM-1144", "PM-0940"]
    title 'ACSC ISM 1143, 1493, 1144, 0940 - System patching'
