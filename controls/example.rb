@@ -58,4 +58,10 @@ require_controls 'cis-windows2016rtm' do
     desc 'Standard users are prevented from running all script execution engines shipped with Microsoft Windows including Windows Script Host (cscript.exe and wscript.exe), powershell.exe, powershell_ise.exe, cmd.exe, wmic.exe and Microsoft HTML Application Host (mshta.exe).'
   end
 
+  control 'xccdf_org.cisecurity.benchmarks_rule_2.3.1.1_L1_Ensure_Accounts_Administrator_account_status_is_set_to_Disabled_MS_only' do
+    tag acsc: ["ACSC ISM","June 2020", "Official", "Protected", "Top_Secret", "Secret", "OSH-1410"]
+    title 'Local administrator accounts - ACSC ISM 1410'
+    desc 'Local administrator accounts are disabled; alternatively, passphrases that are random and unique for each device’s local administrator account are used.'
+  end
+
 end
