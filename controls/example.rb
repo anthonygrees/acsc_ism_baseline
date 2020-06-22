@@ -2,10 +2,8 @@
 
 control 'ACSC-OHS-1407' do
   impact 0.8
-  tag acsc: ["ACSC ISM","June 2020", "Official", "OSH-1407"]
-  tag acsc: ["ACSC ISM","June 2020", "Protected", "OSH-1407"]
-  tag acsc: ["ACSC ISM","June 2020", "Secret", "OSH-1407"]
-  tag acsc: ["ACSC ISM","June 2020", "Top_Secret", "OSH-1407"]
+  tag acsc: ["ACSC ISM","June 2020", "Official", "Protected", "Top_Secret", "Secret", "OSH-1407"]
+
   title 'Guidelines for System Hardening'
   desc 'The latest version (N), or N-1 version, of an operating system is used for Standard Operating Environments (SOEs).'
 
@@ -25,10 +23,8 @@ end
 
 control 'ACSC-OSH-1408' do
   impact 0.8
-  tag acsc: ["ACSC ISM","June 2020", "Official", "OSH-1408"]
-  tag acsc: ["ACSC ISM","June 2020", "Protected", "OSH-1408"]
-  tag acsc: ["ACSC ISM","June 2020", "Secret", "OSH-1408"]
-  tag acsc: ["ACSC ISM","June 2020", "Top_Secret", "OSH-1408"]
+  tag acsc: ["ACSC ISM","June 2020", "Official", "Protected", "Top_Secret", "Secret", "OSH-1408"]
+
   title 'Guidelines for System Hardening'
   desc 'When developing a Microsoft Windows SOE, the 64-bit version of the operating system is used.'
   
@@ -43,17 +39,11 @@ end
 
 require_controls 'cis-windows2016rtm' do
   control 'xccdf_org.cisecurity.benchmarks_rule_2.3.1.1_L1_Ensure_Accounts_Administrator_account_status_is_set_to_Disabled_MS_only' do
-    tag acsc: ["ACSC ISM","June 2020", "Official", "OSH-1409"]
-    tag acsc: ["ACSC ISM","June 2020", "Protected", "OSH-1409"]
-    tag acsc: ["ACSC ISM","June 2020", "Secret", "OSH-1409"]
-    tag acsc: ["ACSC ISM","June 2020", "Top_Secret", "OSH-1409"]
+    tag acsc: ["ACSC ISM","June 2020", "Official", "Protected", "Top_Secret", "Secret", "OSH-1409"]
   end
 
   control 'xccdf_org.cisecurity.benchmarks_rule_2.3.1.3_L1_Ensure_Accounts_Guest_account_status_is_set_to_Disabled_MS_only' do
-    tag acsc: ["ACSC ISM","June 2020", "Official", "OSH-0383"]
-    tag acsc: ["ACSC ISM","June 2020", "Protected", "OSH-0383"]
-    tag acsc: ["ACSC ISM","June 2020", "Secret", "OSH-0383"]
-    tag acsc: ["ACSC ISM","June 2020", "Top_Secret", "OSH-0383"]
+    tag acsc: ["ACSC ISM","June 2020", "Official", "Protected", "Top_Secret", "Secret", "OSH-0383"]
   end
 
 end
