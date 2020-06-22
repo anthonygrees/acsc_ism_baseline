@@ -10,4 +10,4 @@ supports:
   platform: os
 depends:
   - name: cis-windows2016rtm
-    compliance: admin/cis-windows2016rtm-release1607-level1-memberserver
+    compliance: workstation-1/cis-windows2016rtm-release1607-level1-memberserver
