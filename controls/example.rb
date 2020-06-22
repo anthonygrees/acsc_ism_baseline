@@ -68,7 +68,32 @@ require_controls 'cis-windows2016rtm' do
 
 end
 
-require_controls 'cis-windows2016rtm' do
+## Patch Baseline
 
+require_controls 'windows-patch-baseline' do
+  control 'important-count' do
+    tag acsc: ["ACSC ISM","June 2020", "Official", "Protected", "Top_Secret", "Secret", "PM-1143", "PM-1493", "PM-1144", "PM-0940"]
+    title 'System patching - ACSC ISM 1143, 1493, 1144, 0940'
+  end
+
+  control 'important-patches' do
+    tag acsc: ["ACSC ISM","June 2020", "Official", "Protected", "Top_Secret", "Secret", "PM-1472", "PM-1494", "PM-1495", "PM-1496"]
+    title 'System patching - ACSC ISM 1472, 1494, 1495, 1496'
+  end
+
+  control 'optional-count' do
+   tag acsc: ["ACSC ISM","June 2020", "Official", "Protected", "Top_Secret", "Secret", "PM-0300", "PM-0298", "PM-0303", "PM-1497", "PM-1498", "PM-1499", "PM-1500"]
+   title 'System patching - ACSC ISM 0300, 0298, 0303, 1497, 1498, 1499, 1500'
+  end
+
+  control 'optional-patches' do
+   tag acsc: ["ACSC ISM","June 2020", "Official", "Protected", "Top_Secret", "Secret", "PM0304", "PM-1501", "PM-1211"]
+   title 'System patching - ACSC ISM 0304, 1501, 1211'
+  end
+
+  control 'verify-kb' do
+   tag acsc: ["ACSC ISM","June 2020", "Official", "Protected", "Top_Secret", "Secret", "PM-1143", "PM-1493", "PM-1144", "PM-0940"]
+   title 'System patching - ACSC ISM 1143, 1493, 1144, 0940'
+  end
 
 end
