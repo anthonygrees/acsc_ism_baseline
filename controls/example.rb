@@ -66,6 +66,16 @@ require_controls 'cis-windows2016rtm' do
     desc 'Local administrator accounts are disabled; alternatively, passphrases that are random and unique for each device’s local administrator account are used.'
   end
 
+  control 'xccdf_org.cisecurity.benchmarks_rule_2.2.26_L1_Ensure_Deny_log_on_through_Remote_Desktop_Services_is_set_to_Guests_Local_account_MS_only' do
+    tag acsc: ["ACSC ISM","June 2020", "Official", "Protected", "Top_Secret", "Secret", "OSH-1469"]
+    title 'Local administrator accounts - ACSC ISM 1469'
+  end
+
+  control 'xccdf_org.cisecurity.benchmarks_rule_2.2.26_L1_Ensure_Deny_log_on_through_Remote_Desktop_Services_is_set_to_Guests_Local_account_MS_only' do
+    tag acsc: ["ACSC ISM","June 2020", "Official", "Protected", "Top_Secret", "Secret", "OSH-0382"]
+    title 'Application management - ACSC ISM 0382'
+  end
+
 end
 
 ## Patch Baseline
