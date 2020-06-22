@@ -76,6 +76,31 @@ require_controls 'cis-windows2016rtm' do
     title 'ACSC ISM 0382 - Application management'
   end
 
+  control 'xccdf_org.cisecurity.benchmarks_rule_18.9.76.13.1.2_L1_Ensure_Configure_Attack_Surface_Reduction_rules_Set_the_state_for_each_ASR_rule_is_configured' do
+    tag acsc: ["ACSC ISM","June 2020", "Official", "Protected", "Top_Secret", "Secret", "OSH-0843", "OSH-1490"]
+    title 'ACSC ISM 0843, 1490 - Application control'
+  end
+
+  control 'xccdf_org.cisecurity.benchmarks_rule_17.9.5_L1_Ensure_Audit_System_Integrity_is_set_to_Success_and_Failure' do
+    tag acsc: ["ACSC ISM","June 2020", "Official", "Protected", "Top_Secret", "Secret", "OSH-0955"]
+    title 'ACSC ISM 0955 - Application control'
+  end
+
+  control 'xccdf_org.cisecurity.benchmarks_rule_2.3.11.3_L1_Ensure_Network_Security_Allow_PKU2U_authentication_requests_to_this_computer_to_use_online_identities_is_set_to_Disabled' do
+    tag acsc: ["ACSC ISM","June 2020", "Official", "Protected", "Top_Secret", "Secret", "OSH-1471"]
+    title 'ACSC ISM 1471 - Application control'
+  end
+
+  control 'xccdf_org.cisecurity.benchmarks_rule_2.2.48_L1_Ensure_Take_ownership_of_files_or_other_objects_is_set_to_Administrators' do
+    tag acsc: ["ACSC ISM","June 2020", "Official", "Protected", "Top_Secret", "Secret", "OSH-1392"]
+    title 'ACSC ISM 1392 - Application control'
+  end
+
+  control 'xccdf_org.cisecurity.benchmarks_rule_2.3.17.6_L1_Ensure_User_Account_Control_Only_elevate_UIAccess_applications_that_are_installed_in_secure_locations_is_set_to_Enabled' do
+    tag acsc: ["ACSC ISM","June 2020", "Official", "Protected", "Top_Secret", "Secret", "OSH-1544"]
+    title 'ACSC ISM 1544 - Application control'
+  end
+
 end
 
 ## Patch Baseline
