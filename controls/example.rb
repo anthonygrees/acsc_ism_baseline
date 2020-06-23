@@ -101,6 +101,11 @@ require_controls 'cis-windows2016rtm' do
     title 'ACSC ISM 1544 - Application control'
   end
 
+  control 'xccdf_org.cisecurity.benchmarks_rule_2.2.30_L1_Ensure_Generate_security_audits_is_set_to_LOCAL_SERVICE_NETWORK_SERVICE' do
+    tag acsc: ["ACSC ISM","June 2020", "Official", "Protected", "Top_Secret", "Secret", "OSH-0957"]
+    title 'ACSC ISM 0957 - Application control'
+  end
+
 end
 
 ## Patch Baseline
