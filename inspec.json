@@ -3,7 +3,7 @@
         "automate" : {
             "stdout" : "false",
             "url" : "https://anthony-a2.chef-demo.com/data-collector/v0",
-            "token" : "AAAA-AAAA-AAAA-AAATT",
+            "token" : "AAAA-AAAA-AAAA-AAAAB",
             "insecure" : true,
             "node_name" : "ACSC_ISM_Windows_Node",
             "node_uuid" : "12345678-1234-1234-1234-123456785588",
