@@ -154,3 +154,17 @@ control "ACSC-OHS-1139" do
     its("SchUseStrongCrypto") { should cmp == 1 }
   end
 end
+
+## Firewall settings
+
+control "ACSC-OSH-1416" do
+  tag acsc: ["ACSC ISM","June 2020", "Official", "Protected", "Top_Secret", "Secret", "PM-1416"]
+  title "(ACSM ISM 1416 - Software firewall (TLS)"
+  desc  "A software firewall is implemented on workstations and servers to limit both inbound and outbound network connections."
+  impact 1.0
+  describe registry_key("HKLM:\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile") do
+    it { should have_property "EnableFirewall" }
+    its("EnableFirewall") { should cmp == 1 }
+  end
+
+end
