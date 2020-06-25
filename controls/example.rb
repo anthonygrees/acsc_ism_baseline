@@ -132,3 +132,25 @@ require_controls 'windows-patch-baseline' do
   end
 
 end
+
+## TLS Checks
+
+control "ACSC-OHS-1139" do
+  tag acsc: ["ACSC ISM","June 2020", "Official", "Protected", "Top_Secret", "Secret", "PM-1139"]
+  title "(ACSM ISM 1139 - Transport Layer Security (TLS)"
+  desc  "
+    Only the latest version of TLS is used. 
+
+    Set strong cryptography on 64 bit .Net Framework (version 4 and above)
+  "
+  impact 1.0
+  describe registry_key("HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NetFramework\v4.0.30319") do
+    it { should have_property "SchUseStrongCrypto" }
+    its("SchUseStrongCrypto") { should cmp == 1 }
+  end
+
+  describe registry_key("HKLM:\SOFTWARE\Microsoft\.NetFramework\v4.0.30319") do
+    it { should have_property "SchUseStrongCrypto" }
+    its("SchUseStrongCrypto") { should cmp == 1 }
+  end
+end
