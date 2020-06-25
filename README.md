@@ -24,6 +24,23 @@ Next run the profile
 ```bash
 inspec exec .
 ```
+You output will be displayed on the STDOUT as:
+```bash
+Profile: DevSec Windows Patch Baseline (windows-patch-baseline)
+Version: 0.4.0
+Target:  local://
+
+  [PASS]  verify-kb: ACSC ISM 1143, 1493, 1144, 0940 - System patching
+     [PASS]  0 is expected to eq 0
+  [PASS]  important-count: ACSC ISM 1143, 1493, 1144, 0940 - System patching
+     [PASS]  0 is expected to eq 0
+  [PASS]  optional-count: ACSC ISM 0300, 0298, 0303, 1497, 1498, 1499, 1500 - System patching
+     [PASS]  0 is expected to eq 0
+
+
+Profile Summary: 10 successful controls, 8 control failures, 0 controls skipped
+Test Summary: 13 successful, 28 failures, 0 skipped
+```
 
 ## Report
 To report into Chef Automate
