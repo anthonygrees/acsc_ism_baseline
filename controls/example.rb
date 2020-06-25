@@ -144,12 +144,12 @@ control "ACSC-OHS-1139" do
     Set strong cryptography on 64 bit .Net Framework (version 4 and above)
   "
   impact 1.0
-  describe registry_key("HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NetFramework\v4.0.30319") do
+  describe registry_key("HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\.NetFramework\\v4.0.30319") do
     it { should have_property "SchUseStrongCrypto" }
     its("SchUseStrongCrypto") { should cmp == 1 }
   end
 
-  describe registry_key("HKLM:\SOFTWARE\Microsoft\.NetFramework\v4.0.30319") do
+  describe registry_key("HKLM:\\SOFTWARE\\Microsoft\\.NetFramework\\v4.0.30319") do
     it { should have_property "SchUseStrongCrypto" }
     its("SchUseStrongCrypto") { should cmp == 1 }
   end
@@ -162,7 +162,7 @@ control "ACSC-OSH-1416" do
   title "(ACSM ISM 1416 - Software firewall (TLS)"
   desc  "A software firewall is implemented on workstations and servers to limit both inbound and outbound network connections."
   impact 1.0
-  describe registry_key("HKLM:\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile") do
+  describe registry_key("HKLM:\\SYSTEM\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy\\StandardProfile") do
     it { should have_property "EnableFirewall" }
     its("EnableFirewall") { should cmp == 1 }
   end
