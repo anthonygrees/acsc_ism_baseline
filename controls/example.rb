@@ -168,3 +168,22 @@ control "ACSC-OSH-1416" do
   end
 
 end
+
+## Hot Fixes
+
+control "ACSC-SP-1497" do
+  tag acsc: ["ACSC ISM","June 2020", "Official", "Protected", "Top_Secret", "Secret", "PM-1497"]
+  title "(ACSM ISM 1497 - System Patching"
+  desc  "An automated mechanism is used to confirm and record that deployed application and driver patches or updates have been installed, applied successfully and remain in place."
+  impact 1.0
+  hotfixes = %w{ KB4012598 KB4042895 KB4041693 }
+
+  describe.one do
+    hotfixes.each do |hotfix|
+      describe windows_hotfix(hotfix) do
+        it { should_not be_installed }
+      end
+    end
+  end
+end
+
