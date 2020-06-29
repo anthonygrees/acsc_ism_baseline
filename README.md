@@ -24,7 +24,7 @@ Next run the profile
 ```bash
 inspec exec .
 ```
-You output will be displayed on the STDOUT as:
+Your output will be displayed on the STDOUT as:
 ```bash
 Profile: DevSec Windows Patch Baseline (windows-patch-baseline)
 Version: 0.4.0
