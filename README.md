@@ -1,12 +1,12 @@
 # Australian Government Information Security Manual (ISM) InSpec Profile Baseline
 
-## About
+### About
 The Australian Cyber Security Centre within the Australian Signals Directorate produces the Australian Government Information Security Manual (ISM). The purpose of the ISM is to outline a cyber security framework that organisations can apply, using their risk management framework, to protect their information and systems from cyber threats.
 https://www.cyber.gov.au/ism
 
 This is a Chef InSpec profile that takes the ISM guidelines and runs them as code.
 
-## Execute
+### Execute
 Clone the repo
 ```bash
 git clone https://github.com/anthonygrees/acsc_ism_baseline
@@ -42,7 +42,7 @@ Profile Summary: 10 successful controls, 8 control failures, 0 controls skipped
 Test Summary: 13 successful, 28 failures, 0 skipped
 ```
 
-## Report
+### Report
 To report into Chef Automate
 ```bash
 inspec exec . --json-config inspec.json
@@ -50,10 +50,10 @@ inspec exec . --json-config inspec.json
 
 ![ISM Report](/images/ism-report.png)
 
-## Source
+### Source
 Australian Government Information Security Manual - [PDF](https://www.cyber.gov.au/sites/default/files/2020-06/ISM%20-%20List%20of%20Security%20Controls%20%28June%202020%29.xml)
 
-## Chef InSpec
+### Chef InSpec
 Don't have InSpec installed? 
 
 Here you go - [InSpec Link](https://downloads.chef.io/inspec)
