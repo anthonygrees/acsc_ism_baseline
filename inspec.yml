@@ -1,6 +1,6 @@
 name: acsc_ism_baseline
 title: Australian Government Information Security Manual
-maintainer: The Authors
+maintainer: Anthony Rees
 copyright: The Authors
 copyright_email: anthony@chef.io
 license: Apache-2.0
